@@ -76,3 +76,108 @@
 ---
 
 ## 자바스크립트의 기본 문법
+
+### 1. 변수 (Variable)
+
+- 변수(Variable)은 값(value)을 할당(저장)하고 그 할당된 값을 참조하기 위해서 사용하는 것이다. 한 번 쓰고 버리는 값이 아니고 유지가 될 필요가 있는 값은 변수에 담아서 사용한다.
+  또 변수 이름을 통해서 이 값이 무엇을 의미 하는지 명확히 알 수 있어서 코드의 가독성이 좋아진다.
+
+```js
+let a; // 변수 선언
+a = 5; // 변수에 값을 할당
+```
+
+### 2. 변수의 키워드 (Keyword)
+
+- Javascript에서는 var,let,const의 3가지 키워드로 변수 선언이 가능하다.
+  - 3가지의 키워드의 차이점들
+    1. var : 변수 중복선언 가능, 함수 레벨 스코프, 변수 Hoisting
+    2. let : 변수 중복선언 금지, 블록 레벨 스코프, 변수 Hoisting이 발생 안 하는거 처럼 동작을 함
+    3. const : 선언과 동시에 초기화 필요, 재할당 안됨, 상수로 작동됨, 변수명을 대문자로 하는 관례가 있음, 변수 Hoisting이 발생 안 하는거처럼 동작을 함
+- 변수 Hoisting 이란? (Hoisting 사전적 정의 : 끌어 올리기)
+  - 자바스크립트 함수는 실행이 되기 전에 함수 안에 필요한 변수값들을 전부 모아서 유효범위(함수 블록 `{}` 안) 최상단에 선언을한다
+    1. 자바스크립트 파서가 함수 실행 전 해당 함수를 쭉 한 번 훑는다.
+    2. 함수 안에 존재하는 변수/함수선언에 대한 정보를 기억하고 있다가 실행한다.
+- 즉, 함수 내에서 존재하는 변수 중 필요한 값들을 끌어올리는 것이다. 실제로 코드가 끌어올려지는 것이 아닌, 자바스크립트 파서의 내부적으로 끌어올려 처리한다.
+
+- var 키워드는 예측불가한 오류가 생길 위험이 매우 커 잘 안쓰고 let, const 위주로 쓰인다.
+
+### 3. 값 (Value)
+
+```js
+let str = 'Hello World";
+```
+
+str 이라는 이름의 변수를 선언하고 'Hello World' 를 값으로 할당하였다. 이때 'Hello World'는 문자열 타입의 값이다.
+
+자바 스크립트의 모든 값은 데이터 타입을 갖는다. Javascript의 총 7가지 데이터 타입을 보자.
+
+```js
+// 숫자 (Number)
+let num1 = 10;
+let num2 = 10.8;
+
+// 문자 (String)
+let string = "Hello"; // 뜨는 'Hello'
+
+// Boolean
+let bool1 = true;
+let bool2 = false;
+
+// null
+let n = null;
+
+// undefined
+let bar;
+// 변수는 존재하나, 어떠한 값으로도 할당되지 않아 자료형이 정해지지(undefined) 않은 상태
+
+// 객체(Object)
+let obj = { name: "kim", gender: "male" };
+
+// 배열(Array)
+let array = [1, 2, 3];
+
+// 함수(function)
+// 함수표현식
+const fun = function () {};
+
+// 함수선언식
+function fun() {}
+
+// 화살표함수
+const fun = () => {};
+```
+
+Javscript는 C나 Java 등 다른 점이 변수를 선언할때 데이터 타입을 미리 정하지 않아도 된다. 즉 변수에 할당된 값의 타입에 의해서 알아서 변수의 타입이 결정된다. 이것을 동적 타이핑이라하고 Javascript가 다른 프로그래밍 언어와 구별되는 특징 중 하나이다.
+
+### 4. 연산자 (Operator)
+
+```js
+// 산술 연산자
+let a = 5 + 2; // 7
+let b = 5 - 2; // 3
+let c = 5 * 2; // 10
+let d = 6 / 2; // 3
+let e = 7 % 2; // 1
+
+// 비교 연산자
+let a = 3 > 10; // false
+let b = 5 === 5; // true
+
+// 논리 연산자
+let a = 5 > 3 && 2 < 4; //true
+let b = 5 < 3 || 1 > 5; //false
+
+// 할당 연산자
+let color = "red"; // "red"
+
+// 문자열 연결 연산자
+let str = "Hello" + "World"; // "Hello World"
+
+// 타입 연산자
+let type = typeof "Hi"; // "string"
+let type = typeof 4; // "number"
+
+// 인스턴스 생성 연산자
+let today = new Date(); // 'Wed Nov 30 2022 16:57:40 GMT+0900 (한국 표준시)'
+```
