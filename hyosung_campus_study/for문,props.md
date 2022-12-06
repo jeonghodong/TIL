@@ -161,7 +161,7 @@ console.log(name);
 
 // const obj = {
 // 	lastLogin: "2022-12-06",
-// 	name: "hun",
+// 	name: "dong",
 // 	phon: "010-1234-1234"
 // }
 
@@ -184,7 +184,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 const obj = {
   lastLogin: "2022-12-06",
-  name: "hun",
+  name: "dong",
   phon: "010-1234-1234",
 };
 
@@ -213,7 +213,7 @@ obj의 내용을 바탕으로 defaultProps를 작성 해 주세요.
 
 // //const obj = {
 // //	lastLogin: "2022-12-06",
-// //	name: "hun",
+// //	name: "dong",
 // //	phon: "010-1234-1234"
 // //}
 
@@ -238,7 +238,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 //const obj = {
 //	lastLogin: "2022-12-06",
-//	name: "hun",
+//	name: "dong",
 //	phon: "010-1234-1234"
 //}
 
@@ -253,7 +253,7 @@ function Userinfo(props) {
 }
 
 Userinfo.defaultProps = {
-  name: "hun",
+  name: "dong",
   phon: "010-1234-1234",
   lastLogin: "2022-12-06",
 };
@@ -299,8 +299,8 @@ root.render(<Userinfo />);
 
 // const comment = {
 //   author: {
-//     name: "hun",
-//     work: "효성직업전문학원",
+//     name: "dong",
+//     work: "school",
 //   },
 //   text: 5,
 //   date: new Date().toLocaleDateString(),
@@ -342,8 +342,8 @@ Comment.propTypes = {
 
 const comment = {
   author: {
-    name: "hun",
-    work: "효성직업전문학원",
+    name: "dong",
+    work: "school",
   },
   text: 5,
   date: new Date().toLocaleDateString(),
