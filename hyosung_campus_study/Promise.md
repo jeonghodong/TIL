@@ -3,6 +3,7 @@
 아래의 Callback 함수를 Promise로 바꾸어 주세요.
 
 ```js
+// question
 function call(v1, callback) {
   callback(v1[0] + v1[1]);
 }
@@ -30,6 +31,7 @@ call([1, 2]).then((res) => {
 아래의 Callback 함수를 promise로 바꾸어 주세요.
 
 ```js
+// question
 const error = true; // true이면 에러가 있음 , false이면 에러가 없음
 function promise(callback) {
   if (error === true) {

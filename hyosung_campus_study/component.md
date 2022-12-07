@@ -3,7 +3,7 @@
 아래의 빈칸에 올바른 답을 넣어 주세요.
 
 ```js
-/* 
+// question
 class Study {
   constructor(name) {
     |빈칸에 올바른 답을 넣어 주세요.|
@@ -28,8 +28,7 @@ class Coding |빈칸에 올바른 답을 넣어 주세요.| {
 const coding = new Coding("React", "오늘");
 coding.speak();
 
-|출력 결과를 입력 해 주세요| 
-*/
+|출력 결과를 입력 해 주세요|
 
 // answer
 class Study {
@@ -65,7 +64,7 @@ coding.speak();
 ![](./img/예제1.png)
 
 ```js
-/* 
+// question
 const root = document.getElementById("root");
 
 class H1 |빈칸에 올바른 답을 넣어 주세요.| {
@@ -87,7 +86,6 @@ const Container = () => {
 };
 
 ReactDOM.render(<Container />, root);
-*/
 
 // answer
 const root = document.getElementById("root");
@@ -120,7 +118,7 @@ ReactDOM.render(<Container />, root);
 ![](./img/예제1.png)
 
 ```js
-/*
+// question
 const root = document.getElementById("root");
 
 function H1(|빈칸에 올바른 답을 넣어 주세요.|) {
@@ -135,7 +133,6 @@ const Container = () => {
   );
 };
 ReactDOM.render(<Container />, root);
-*/
 
 // answer
 const root = document.getElementById("root");
@@ -166,7 +163,7 @@ ReactDOM.render(<Container />, root);
 - 조건 3 - counter는 span의 클릭에 표현이 됩니다.
 
 ```js
-/*
+// question
 const root = document.getElementById("root");
 
 class App extends React.Component {
@@ -192,7 +189,6 @@ class App extends React.Component {
 }
 
 ReactDOM.render(<App />, root);
-*/
 
 // answer
 // class component 방식

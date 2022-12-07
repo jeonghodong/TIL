@@ -3,17 +3,18 @@
 다음 배열을 콘솔에 맞게 출력하는 for문을 작성 해 주세요.
 
 ```js
-// const array = [1, 2, 3, 4, 5]
-// for(정답을 입력 해 주세요.) {
-// 	console.log(정답을 입력 해 주세요.)
-// }
+// question
+const array = [1, 2, 3, 4, 5]
+for("정답을 입력 해 주세요.") {
+	console.log("정답을 입력 해 주세요.")
+}
 
-// 출력
-// 1
-// 2
-// 3
-// 4
-// 5
+출력
+1
+2
+3
+4
+5
 
 // answer
 const array = [1, 2, 3, 4, 5];
@@ -30,17 +31,18 @@ for (let i = 0; i < array.length; i++) {
 다음 배열을 콘솔에 맞게 출력하는 for문을 작성 해 주세요.
 
 ```js
-// const array = [1, 2, 3, 4, 5]
-// for(정답을 입력 해 주세요.) {
-// 	console.log(정답을 입력 해 주세요.)
-// }
+// question
+const array = [1, 2, 3, 4, 5]
+for("정답을 입력 해 주세요.") {
+	console.log("정답을 입력 해 주세요.")
+}
 
-// 출력
-// 5
-// 4
-// 3
-// 2
-// 1
+출력
+5
+4
+3
+2
+1
 
 // answer
 const array = [1, 2, 3, 4, 5];
@@ -56,24 +58,25 @@ for (let i = 5; i >= 0; i--) {
 다음 배열을 콘솔에 맞게 출력하는 for문을 작성 해 주세요.
 
 ```js
-// const array = [1, 2, 3, 4, 5]
-// for(정답을 입력 해 주세요.) {
-// 	for(정답을 입력 해 주세요.) {
-// 		console.log(정답을 입력 해 주세요.)
-// 	}
-// }
+// question
+const array = [1, 2, 3, 4, 5]
+for("정답을 입력 해 주세요.") {
+	for("정답을 입력 해 주세요.") {
+		console.log("정답을 입력 해 주세요.")
+	}
+}
 
-// 출력
-// 1 2
-// 1 3
-// 1 4
-// 1 5
-// 2 3
-// 2 4
-// 2 5
-// 3 4
-// 3 5
-// 4 5
+출력
+1 2
+1 3
+1 4
+1 5
+2 3
+2 4
+2 5
+3 4
+3 5
+4 5
 
 // answer
 const array = [1, 2, 3, 4, 5];
@@ -92,29 +95,30 @@ for (let i = 0; i < array.length; i++) {
 다음 배열을 콘솔에 맞게 출력하는 for문을 작성 해 주세요.
 
 ```js
-// const array = [1, 2, 3, 4, 5]
-// for(정답을 입력 해 주세요.) {
-// 	for(정답을 입력 해 주세요.) {
-// 		console.log(정답을 입력 해 주세요.)
-// 	}
-// }
+// question
+const array = [1, 2, 3, 4, 5]
+for("정답을 입력 해 주세요.") {
+	for("정답을 입력 해 주세요.") {
+		console.log("정답을 입력 해 주세요.")
+	}
+}
 
-// 출력
-// 1 1
-// 1 2
-// 1 3
-// 1 4
-// 1 5
-// 3 1
-// 3 2
-// 3 3
-// 3 4
-// 3 5
-// 5 1
-// 5 2
-// 5 3
-// 5 4
-// 5 5
+출력
+1 1
+1 2
+1 3
+1 4
+1 5
+3 1
+3 2
+3 3
+3 4
+3 5
+5 1
+5 2
+5 3
+5 4
+5 5
 
 // answer
 const array = [1, 2, 3, 4, 5];
@@ -132,16 +136,17 @@ for (let i = 0; i < array.length; i = i + 2) {
 다음 IF문을 삼항연산자로 바꾸어 주세요.
 
 ```js
-// let isTrue = false;
-// let name;
-// if(isTrue === flase) {
-// 	name = "거짓"
-// } else {
-//   name = "진실"
-// }
+// question
+let isTrue = false;
+let name;
+if(isTrue === flase) {
+	name = "거짓"
+} else {
+  name = "진실"
+}
 
-// // 아래에 빈칸을 채워 주세요.
-// name =      ?        :
+"아래에 빈칸을 채워 주세요."
+name =      ?        :
 
 // answer
 let isTrue = false;
@@ -157,27 +162,26 @@ console.log(name);
 다음 React 코드에서 Props가 제대로 전달 되도록 정답을 채워 주세요.
 
 ```js
-// const root = ReactDOM.createRoot(document.getElementById("root"));
+// question
+const root = ReactDOM.createRoot(document.getElementById("root"));
 
-// const obj = {
-// 	lastLogin: "2022-12-06",
-// 	name: "dong",
-// 	phon: "010-1234-1234"
-// }
+const obj = {
+  lastLogin: "2022-12-06",
+  name: "dong",
+  phon: "010-1234-1234",
+};
 
-// function Userinfo(props) {
-//   return (
-//     <div className="UserInfo">
-//       <h1 className="name">{정답을 채워 주세요}</h1>
-//       <h2 className="phon">{정답을 채워 주세요}</h2>
-//       <h2 className="lastLogin">{정답을 채워 주세요}</h2>
-//     </div>
-//   );
-// }
+function Userinfo(props) {
+  return (
+    <div className="UserInfo">
+      <h1 className="name">{"정답을 채워 주세요"}</h1>
+      <h2 className="phon">{"정답을 채워 주세요"}</h2>
+      <h2 className="lastLogin">{"정답을 채워 주세요"}</h2>
+    </div>
+  );
+}
 
-// root.render(
-//   정답을 채워 주세요
-// );
+root.render("정답을 채워 주세요");
 
 // answer
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -209,29 +213,28 @@ root.render(<Userinfo name={obj.name} phon={obj.phon} lastLogin={obj.lastLogin} 
 obj의 내용을 바탕으로 defaultProps를 작성 해 주세요.
 
 ```js
-// const root = ReactDOM.createRoot(document.getElementById("root"));
+// question
+const root = ReactDOM.createRoot(document.getElementById("root"));
 
-// //const obj = {
-// //	lastLogin: "2022-12-06",
-// //	name: "dong",
-// //	phon: "010-1234-1234"
-// //}
-
-// function Userinfo(props) {
-//   return (
-//     <div className="UserInfo">
-//       <h1 className="name">{정답을 채워 주세요}</h1>
-//       <h2 className="phon">{정답을 채워 주세요}</h2>
-//       <h2 className="lastLogin">{정답을 채워 주세요}</h2>
-//     </div>
-//   );
+// const obj = {
+// 	lastLogin: "2022-12-06",
+// 	name: "dong",
+// 	phon: "010-1234-1234"
 // }
 
-// // 여기에 defaultProps를 넣어주세요
+function Userinfo(props) {
+  return (
+    <div className="UserInfo">
+      <h1 className="name">{"정답을 채워 주세요."}</h1>
+      <h2 className="phon">{"정답을 채워 주세요."}</h2>
+      <h2 className="lastLogin">{"정답을 채워 주세요."}</h2>
+    </div>
+  );
+}
 
-// root.render(
-//   정답을 채워 주세요
-// );
+("여기에 defaultProps를 넣어주세요.");
+
+root.render("정답을 채워 주세요.");
 
 //answer
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -268,45 +271,46 @@ root.render(<Userinfo />);
 다음 React 코드에서 Props가 제대로 타입을 검사 할 수 있도록 정답을 채워 주세요.
 
 ```js
-// const root = ReactDOM.createRoot(document.getElementById("root"));
+// question
+const root = ReactDOM.createRoot(document.getElementById("root"));
 
-// function Userinfo(props) {
-//   return (
-//     <div className="UserInfo">
-//       <h1 className="work">{props.author.work}</h1>
-//       <h2 className="UserInfo-name">{props.author.name}</h2>
-//     </div>
-//   );
-// }
+function Userinfo(props) {
+  return (
+    <div className="UserInfo">
+      <h1 className="work">{props.author.work}</h1>
+      <h2 className="UserInfo-name">{props.author.name}</h2>
+    </div>
+  );
+}
 
-// Userinfo.propTypes = {
-//   // 정답을 채워 주세요
-// };
+Userinfo.propTypes = {
+  "정답을 채워 주세요."
+};
 
-// function Comment(props) {
-//   return (
-//     <div className="Comment">
-//       <Userinfo author={props.author} />
-//       <div className="Comment-text">{props.text}</div>
-//       <div className="Comment-date">{props.date}</div>
-//     </div>
-//   );
-// }
+function Comment(props) {
+  return (
+    <div className="Comment">
+      <Userinfo author={props.author} />
+      <div className="Comment-text">{props.text}</div>
+      <div className="Comment-date">{props.date}</div>
+    </div>
+  );
+}
 
-// Comment.propTypes = {
-//   // 정답을 채워 주세요
-// };
+Comment.propTypes = {
+ "정답을 채워 주세요."
+};
 
-// const comment = {
-//   author: {
-//     name: "dong",
-//     work: "school",
-//   },
-//   text: 5,
-//   date: new Date().toLocaleDateString(),
-// };
+const comment = {
+  author: {
+    name: "dong",
+    work: "school",
+  },
+  text: 5,
+  date: new Date().toLocaleDateString(),
+};
 
-// root.render(<Comment author={comment.author} text={comment.text} date={comment.date} />);
+root.render(<Comment author={comment.author} text={comment.text} date={comment.date} />);
 
 // answer
 const root = ReactDOM.createRoot(document.getElementById("root"));
