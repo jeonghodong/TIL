@@ -1,4 +1,4 @@
-## 문제 1 - Map And Key
+# 문제 1 - Map And Key
 
 다음 빈칸에 알맞은 JSX 코드를 넣어 주세요.
 
@@ -30,7 +30,7 @@ root.render(<ClientList clientList={array2} />);
 
 ---
 
-## 문제 2 - State
+# 문제 2 - State
 
 List의 숫자를 클릭하면 해당 값이 2배가 되는 페이지를 만들어 주세요.
 
@@ -145,7 +145,7 @@ root.render(<ListControl />);
 
 ---
 
-## 문제 3 - 피자 나눠 먹기 (1)
+# 문제 3 - 피자 나눠 먹기 (1)
 
 ### 문제 설명
 
@@ -160,7 +160,7 @@ console.log(solution(15)); //3
 
 ---
 
-## 문제 4 - 피자 나눠 먹기 (2)
+# 문제 4 - 피자 나눠 먹기 (2)
 
 ### 문제 설명
 

@@ -1,4 +1,4 @@
-## 문제 1 - for문
+# 문제 1 - for문
 
 다음 배열을 콘솔에 맞게 출력하는 for문을 작성 해 주세요.
 
@@ -53,7 +53,7 @@ for (let i = 5; i >= 0; i--) {
 
 ---
 
-## 문제 3 - 이중 for문
+# 문제 3 - 이중 for문
 
 다음 배열을 콘솔에 맞게 출력하는 for문을 작성 해 주세요.
 
@@ -90,7 +90,7 @@ for (let i = 0; i < array.length; i++) {
 
 ---
 
-## 문제 4 - 이중 for문
+# 문제 4 - 이중 for문
 
 다음 배열을 콘솔에 맞게 출력하는 for문을 작성 해 주세요.
 
@@ -131,7 +131,7 @@ for (let i = 0; i < array.length; i = i + 2) {
 
 ---
 
-## 문제 5 - 삼항연산자
+# 문제 5 - 삼항연산자
 
 다음 IF문을 삼항연산자로 바꾸어 주세요.
 
@@ -157,7 +157,7 @@ console.log(name);
 
 ---
 
-## 문제 6 - Props
+# 문제 6 - Props
 
 다음 React 코드에서 Props가 제대로 전달 되도록 정답을 채워 주세요.
 
@@ -207,7 +207,7 @@ root.render(<Userinfo name={obj.name} phon={obj.phon} lastLogin={obj.lastLogin} 
 
 ---
 
-## 문제 7 - defaultProps
+# 문제 7 - defaultProps
 
 문제 6번의 코드를 실수로 obj를 빼고 전달 해 버렸습니다!
 obj의 내용을 바탕으로 defaultProps를 작성 해 주세요.
@@ -266,7 +266,7 @@ root.render(<Userinfo />);
 
 ---
 
-## 문제 8 - PropTypes
+# 문제 8 - PropTypes
 
 다음 React 코드에서 Props가 제대로 타입을 검사 할 수 있도록 정답을 채워 주세요.
 
@@ -358,7 +358,7 @@ root.render(<Comment author={comment.author} text={comment.text} date={comment.d
 
 ---
 
-## 문제 9 - 배열의 평균값
+# 문제 9 - 배열의 평균값
 
 ### 문제 설명
 

@@ -1,4 +1,4 @@
-## 문제 1 - Class
+# 문제 1 - Class
 
 아래의 빈칸에 올바른 답을 넣어 주세요.
 
@@ -58,7 +58,7 @@ coding.speak();
 
 ---
 
-## 문제 2 - Props(Class)
+# 문제 2 - Props(Class)
 
 다음 이미지를 보고 해당 뷰를 만들기 위한 빈칸을 채워 주세요.
 ![](./img/예제1.png)
@@ -112,7 +112,7 @@ ReactDOM.render(<Container />, root);
 
 ---
 
-## 문제 3 - Props(function)
+# 문제 3 - Props(function)
 
 다음 이미지를 보고 해당 뷰를 만들기 위한 빈칸을 채워 주세요.
 ![](./img/예제1.png)
@@ -154,7 +154,7 @@ ReactDOM.render(<Container />, root);
 
 ---
 
-## 문제 4 - State
+# 문제 4 - State
 
 다음 자바스크립트 코드를 보고 조건에 충족 하도록 빈칸을 채워 주세요.
 
@@ -247,7 +247,7 @@ ReactDOM.render(<App />, root);
 
 ---
 
-## 문제 5 - 생명주기 (LifeCycle)
+# 문제 5 - 생명주기 (LifeCycle)
 
 4번 문제의 답이 렌더링이 되었을 때 `"페이지 로딩이 완료되었습니다"` 라는 console.log를 찍어 주세요.
 
@@ -288,7 +288,7 @@ ReactDOM.render(<App />, root);
 
 ---
 
-## 문제 6 - 순서쌍의 개수
+# 문제 6 - 순서쌍의 개수
 
 ### 문제 설명
 

@@ -1,4 +1,4 @@
-## 문제 1 - useState
+# 문제 1 - useState
 
 ### 버튼을 클릭 했을 때 1 ~ 45 사이의 랜덤한 숫자가 List에 출력이 되도록 코드를 작성 해 주세요.
 
@@ -39,7 +39,7 @@
 
 ---
 
-## 문제 2 - useEffect
+# 문제 2 - useEffect
 
 사수가 코드를 작성하다가 갑자기 몸이 아프다며 반차를 쓰고 도망갔습니다. 아래의 코드가 정상적으로 동작하려면 어떻게 해 주어야 할까요?
 
@@ -149,7 +149,7 @@ root.render(<App />);
 
 ---
 
-## 문제 3 - useRef
+# 문제 3 - useRef
 
 input값에 기본 값으로 firstList에 들어가 있는 문자를 input의 useRef를 이용하여 설정 할 수 있도록 구현 해 주세요.
 
@@ -192,7 +192,8 @@ function App(props) {
   const input = React.useRef(null);
   console.log(input);
 
-  const onClick = () => (input.current.value = firstValue[Math.floor(Math.random() * (firstValue.length - 0) + 0)]);
+  const onClick = () =>
+    (input.current.value = firstValue[Math.floor(Math.random() * (firstValue.length - 0) + 0)]);
 
   React.useEffect(() => {
     input.current.value = firstValue[Math.floor(Math.random() * (firstValue.length - 0) + 0)];
@@ -210,7 +211,7 @@ root.render(<App />);
 
 ---
 
-## 문제 4 - useMemo
+# 문제 4 - useMemo
 
 고객 명단을 관리하는 페이지 입니다. 전체적인 코드를 파악하고, useMemo를 이용하여 온라인인 고객만 계산 할 수 있는 함수와 useMemo를 구현 해 주세요.
 
@@ -459,7 +460,7 @@ root.render(<App />);
 
 ---
 
-## 문제 5 - 최댓값 만들기.
+# 문제 5 - 최댓값 만들기.
 
 문제 설명
 정수 배열 `numbers`가 매개변수로 주어집니다. `numbers`의 원소 중 두 개를 곱해 만들 수 있는 최댓값을 return하도록 solution 함수를 완성해주세요.
@@ -476,7 +477,7 @@ console.log(solution([0, 31, 24, 10, 1, 9]));
 
 ---
 
-## 문제 6 - 모스부호
+# 문제 6 - 모스부호
 
 ### 문제 설명
 

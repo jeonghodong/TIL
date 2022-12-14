@@ -1,4 +1,4 @@
-## 문제1 - 삼항연산자
+# 문제1 - 삼항연산자
 
 다음 조건을 if문으로 작성 해 주시고, 삼항연산자로도 작성 해 주세요.
 사전 조건 : condition, name이라는 변수가 있습니다.
@@ -23,7 +23,7 @@ console.log(name);
 
 ---
 
-## 문제 2 - 삼항연산자
+# 문제 2 - 삼항연산자
 
 다음 조건을 if문으로 작성 해 주시고, 삼항연산자로도 작성 해 주세요.
 
@@ -55,7 +55,7 @@ console.log(name);
 
 ---
 
-## 문제 3- 삼항연산자 중첩
+# 문제 3- 삼항연산자 중첩
 
 다음 조건을 if문으로 작성 해 주시고, 삼항연산자로도 작성 해 주세요.
 
@@ -89,13 +89,17 @@ console.log(name);
   }
   console.log(name);
   // 삼항연산자
-  confition(param) === 0 ? (param >= 10 ? (name = "10보다 큰 짝수") : (name = "10보다 작은 짝수")) : (name = "홀수");
+  confition(param) === 0
+    ? param >= 10
+      ? (name = "10보다 큰 짝수")
+      : (name = "10보다 작은 짝수")
+    : (name = "홀수");
   console.log(name);
   ```
 
 ---
 
-## 문제 4 - 삼항연산자로 바꾸기
+# 문제 4 - 삼항연산자로 바꾸기
 
 ```js
 router.get("/follower/:uid"),
@@ -117,7 +121,7 @@ let count = req.body.count === undefined ? 0 : req.body.count;
 
 ---
 
-## 문제 5 - JSX
+# 문제 5 - JSX
 
 다음 HTML을 JSX로 바꾸어 주세요.
 
@@ -142,7 +146,7 @@ export default App;
 
 ---
 
-## 문제 6 - JSX
+# 문제 6 - JSX
 
 다음 HTML을 JSX로 바꾸어 주세요
 
@@ -170,7 +174,7 @@ export default App;
 
 ---
 
-## 문제 7 - JSX
+# 문제 7 - JSX
 
 다음 HTML을 JSX로 바꾸어 주세요.
 
@@ -198,7 +202,7 @@ export default App;
 
 ---
 
-## 문제 8 - 세균 증식
+# 문제 8 - 세균 증식
 
 ### 문제 설명
 
@@ -213,7 +217,7 @@ console.log(solution(7, 15));
 
 ---
 
-## 문제 9 - 중복된 문자 제거
+# 문제 9 - 중복된 문자 제거
 
 ### 문제 설명
 
