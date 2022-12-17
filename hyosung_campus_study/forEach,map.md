@@ -93,30 +93,12 @@ for (let i = 0; i < array.length; i++) {
 
 ```js
 // question
-const array = [
-  "일어나기",
-  "씻기",
-  "커피사기",
-  "출근하기",
-  "일하기",
-  "점심먹기",
-  "일하기",
-  "퇴근하기",
-];
+const array = ["일어나기", "씻기", "커피사기", "출근하기", "일하기", "점심먹기", "일하기", "퇴근하기"];
 const array2 = [];
 array.forEach(/*빈칸을 채워주세요*/);
 
 // answer
-const array = [
-  "일어나기",
-  "씻기",
-  "커피사기",
-  "출근하기",
-  "일하기",
-  "점심먹기",
-  "일하기",
-  "퇴근하기",
-];
+const array = ["일어나기", "씻기", "커피사기", "출근하기", "일하기", "점심먹기", "일하기", "퇴근하기"];
 const array2 = [];
 array.forEach((value) => {
   array2.push(<li>{value}</li>);
@@ -131,29 +113,11 @@ array.forEach((value) => {
 
 ```js
 // question
-const array = [
-  "일어나기",
-  "씻기",
-  "커피사기",
-  "출근하기",
-  "일하기",
-  "점심먹기",
-  "일하기",
-  "퇴근하기",
-];
+const array = ["일어나기", "씻기", "커피사기", "출근하기", "일하기", "점심먹기", "일하기", "퇴근하기"];
 const array2 = array.map(/*빈칸을 채워주세요.*/);
 
 // answer
-const array = [
-  "일어나기",
-  "씻기",
-  "커피사기",
-  "출근하기",
-  "일하기",
-  "점심먹기",
-  "일하기",
-  "퇴근하기",
-];
+const array = ["일어나기", "씻기", "커피사기", "출근하기", "일하기", "점심먹기", "일하기", "퇴근하기"];
 const array2 = array.map((value) => <li>{value}</li>);
 ```
 
@@ -325,57 +289,8 @@ function ClientList(props) {
   return <ul>{props.arr}</ul>;
 }
 const array2 = array.map((value) => {
-  return value.id === "1" ? (
-    <li>{`${value.id}번의 이름은 ${value.name}이고 닉네임은 ${value.nick}입니다.`}</li>
-  ) : null;
+  return value.id === "1" ? <li>{`${value.id}번의 이름은 ${value.name}이고 닉네임은 ${value.nick}입니다.`}</li> : null;
 });
 
 root.render(<ClientList arr={array2} />);
-```
-
----
-
-# 문제 11 - 특정 문자 제거하기
-
-### 문제 설명
-
-문자열 `my_string`과 문자 `letter`이 매개변수로 주어집니다. `my_string`에서 `letter`를 제거한 문자열을 return하도록 solution 함수를 완성해주세요.
-
-```js
-// answer
-const solution = (my_string, letter) => {
-  let array = my_string.split("");
-  for (let i = array.length - 1; i >= 0; i--) {
-    if (array[i] === letter) {
-      array.splice(i, 1);
-    }
-  }
-  return (answer = array.join(""));
-};
-console.log(solution("abcde", "f")); //abcde
-```
-
----
-
-# 문제 12 - 배열 원소의 길이
-
-### 문제설명
-
-문자열 배열 `strlist`가 매개변수로 주어집니다. `strlist` 각 원소의 길이를 담은 배열을 retrun하도록 solution 함수를 완성해주세요.
-
-```js
-// answer1
-function solution1(strlist) {
-  var answer = strlist.map((value) => {
-    return value.length;
-  });
-  return answer;
-}
-console.log(solution(["We", "are", "the", "world!"]));
-
-// answer2
-function solution2(strlist) {
-  return strlist.map((v) => v.length);
-}
-console.log(solution(["We", "are", "the", "world!"]));
 ```

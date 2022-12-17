@@ -89,11 +89,7 @@ console.log(name);
   }
   console.log(name);
   // 삼항연산자
-  confition(param) === 0
-    ? param >= 10
-      ? (name = "10보다 큰 짝수")
-      : (name = "10보다 작은 짝수")
-    : (name = "홀수");
+  confition(param) === 0 ? (param >= 10 ? (name = "10보다 큰 짝수") : (name = "10보다 작은 짝수")) : (name = "홀수");
   console.log(name);
   ```
 
@@ -198,41 +194,4 @@ function App() {
 }
 
 export default App;
-```
-
----
-
-# 문제 8 - 세균 증식
-
-### 문제 설명
-
-어떤 세균은 1시간에 두배만큼 증식한다고 합니다. 처음 세균의 마리수 `n`과 경과한 시간 `t`가 매개변수로 주어질 때 `t`시간 후 세균의 수를 return하도록 solution 함수를 완성해주세요.
-
-```js
-// answer
-const solution = (n, t) => n * 2 ** t;
-
-console.log(solution(7, 15));
-```
-
----
-
-# 문제 9 - 중복된 문자 제거
-
-### 문제 설명
-
-문자열 `my_string`이 매개변수로 주어집니다. `my_string`에서 중복된 문자를 제거하고 하나의 문자만 남긴 문자열을 return하도록 solution 함수를 완성해주세요.
-
-```js
-// answer
-const solution = (my_string) => {
-  let answer = "";
-  for (let i = 0; i < my_string.length; i++) {
-    if (my_string.indexOf(my_string[i]) === i) {
-      answer += my_string[i];
-    }
-  }
-  return answer;
-};
-console.log(solution("We are the world"));
 ```

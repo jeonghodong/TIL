@@ -355,25 +355,3 @@ const comment = {
 
 root.render(<Comment author={comment.author} text={comment.text} date={comment.date} />);
 ```
-
----
-
-# 문제 9 - 배열의 평균값
-
-### 문제 설명
-
-정수 배열 `numbers`가 매개변수로 주어집니다. `numbers`의 원소의 평균값을 return하도록 solution 함수를 완성해주세요.
-
-```js
-// answer
-const solution = (numbers) => {
-  let num = 0;
-  for (let i = 0; i < numbers.length; i++) {
-    num = numbers[i] + num;
-  }
-  return (answer = num / numbers.length);
-};
-
-console.log(solution([89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99]));
-// 94
-```

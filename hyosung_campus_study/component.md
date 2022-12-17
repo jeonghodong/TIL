@@ -285,39 +285,3 @@ class App extends React.Component {
 
 ReactDOM.render(<App />, root);
 ```
-
----
-
-# 문제 6 - 순서쌍의 개수
-
-### 문제 설명
-
-순서쌍이란 두 개의 숫자를 순서를 정하여 짝지어 나타낸 쌍으로 (a, b)로 표기합니다. 자연수 `n`이 매개변수로 주어질 때 두 숫자의 곱이 `n`인 자연수 순서쌍의 개수를 return하도록 solution 함수를 완성해주세요.
-
-```js
-// answer
-const solution = (n) => {
-  answer = 0;
-  for (i = 1; i <= n; i++) {
-    for (j = 1; j <= n; j++) {
-      i * j === n ? answer++ : null;
-    }
-  }
-  return answer; //6
-};
-
-console.log(solution(20));
-
-// answer2;
-const solution2 = (n) => {
-  value = [];
-  for (i = 1; i <= n; i++) {
-    for (j = 1; j <= n; j++) {
-      i * j === n ? (value = [true, ...value]) : null;
-    }
-  }
-  return (answer = value.length); //6
-};
-
-console.log(solution2(20));
-```

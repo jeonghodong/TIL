@@ -192,8 +192,7 @@ function App(props) {
   const input = React.useRef(null);
   console.log(input);
 
-  const onClick = () =>
-    (input.current.value = firstValue[Math.floor(Math.random() * (firstValue.length - 0) + 0)]);
+  const onClick = () => (input.current.value = firstValue[Math.floor(Math.random() * (firstValue.length - 0) + 0)]);
 
   React.useEffect(() => {
     input.current.value = firstValue[Math.floor(Math.random() * (firstValue.length - 0) + 0)];
@@ -456,101 +455,4 @@ function App(props) {
 }
 
 root.render(<App />);
-```
-
----
-
-# 문제 5 - 최댓값 만들기.
-
-문제 설명
-정수 배열 `numbers`가 매개변수로 주어집니다. `numbers`의 원소 중 두 개를 곱해 만들 수 있는 최댓값을 return하도록 solution 함수를 완성해주세요.
-
-```js
-// answer
-const solution = (numbers) => {
-  numbers.sort((b, a) => a - b);
-  return (answer = numbers[0] * numbers[1]);
-};
-
-console.log(solution([0, 31, 24, 10, 1, 9]));
-```
-
----
-
-# 문제 6 - 모스부호
-
-### 문제 설명
-
-머쓱이는 친구에게 모스부호를 이용한 편지를 받았습니다. 그냥은 읽을 수 없어 이를 해독하는 프로그램을 만들려고 합니다. 문자열 `letter`가 매개변수로 주어질 때, `letter`를 영어 소문자로 바꾼 문자열을 return 하도록 solution 함수를 완성해보세요.모스부호는 다음과 같습니다.
-
-```js
-morse = {
-  ".-": "a",
-  "-...": "b",
-  "-.-.": "c",
-  "-..": "d",
-  ".": "e",
-  "..-.": "f",
-  "--.": "g",
-  "....": "h",
-  "..": "i",
-  ".---": "j",
-  "-.-": "k",
-  ".-..": "l",
-  "--": "m",
-  "-.": "n",
-  "---": "o",
-  ".--.": "p",
-  "--.-": "q",
-  ".-.": "r",
-  "...": "s",
-  "-": "t",
-  "..-": "u",
-  "...-": "v",
-  ".--": "w",
-  "-..-": "x",
-  "-.--": "y",
-  "--..": "z",
-};
-```
-
-```js
-// answer
-const solution = (letter) => {
-  morse = {
-    ".-": "a",
-    "-...": "b",
-    "-.-.": "c",
-    "-..": "d",
-    ".": "e",
-    "..-.": "f",
-    "--.": "g",
-    "....": "h",
-    "..": "i",
-    ".---": "j",
-    "-.-": "k",
-    ".-..": "l",
-    "--": "m",
-    "-.": "n",
-    "---": "o",
-    ".--.": "p",
-    "--.-": "q",
-    ".-.": "r",
-    "...": "s",
-    "-": "t",
-    "..-": "u",
-    "...-": "v",
-    ".--": "w",
-    "-..-": "x",
-    "-.--": "y",
-    "--..": "z",
-  };
-
-  return letter
-    .split(" ")
-    .map((value) => morse[value])
-    .join("");
-};
-
-console.log(solution(".... . .-.. .-.. ---")); //hello
 ```
